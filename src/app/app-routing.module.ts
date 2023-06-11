@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { AddProvidersComponent } from './providers/add-providers/add-providers.component';
 
 const routes: Routes = [
   {path:"", component:HomeComponent},
@@ -15,12 +16,13 @@ const routes: Routes = [
   {path:"login", component:LoginComponent},
   {path:"register", component:RegisterComponent},
   {path:"providers", component:ProvidersComponent},
+  {path:"providers/add", component: AddProvidersComponent},
   {path:"**", component:NotfoundComponent},
 ];
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes)], 
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

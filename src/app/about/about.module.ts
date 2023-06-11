@@ -1,8 +1,9 @@
 import { NgModule } from "@angular/core";
 import { AboutComponent } from '../about/about.component';
+import { RouterModule } from "@angular/router";
 @NgModule({
     declarations: [AboutComponent], //components, directives, pipes
-    imports: [], //modules
+    imports: [RouterModule], //modules
     exports: [AboutComponent], //items from declarations and imports
     providers: [], //services
 })
